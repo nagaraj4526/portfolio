@@ -121,6 +121,23 @@ body {
   background: rgba(0, 212, 255, 0.05);
 }
 
+/* NAV TOGGLE (hamburger) */
+.nav-toggle {
+  display: none;
+  background: none;
+  border: 1px solid transparent;
+  color: var(--accent);
+  cursor: pointer;
+  padding: 0.4rem;
+  border-radius: 6px;
+  transition: all 0.3s;
+}
+
+.nav-toggle:hover {
+  border-color: var(--border);
+  background: rgba(0, 212, 255, 0.05);
+}
+
 /* SECTIONS */
 section {
   min-height: 100vh;
@@ -697,6 +714,51 @@ section {
 @media (max-width: 768px) {
   .about-grid, .contact-wrapper { grid-template-columns: 1fr; }
   .hero-stats { gap: 1.5rem; }
-  .nav-links { display: none; }
   .about-avatar { width: 200px; height: 200px; font-size: 5rem; }
+
+  /* Mobile nav: hamburger toggle + collapsible dropdown */
+  .nav-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 101;
+  }
+
+  .nav-links {
+    position: fixed;
+    top: 64px; /* adjust if your navbar's actual rendered height differs */
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    gap: 0;
+    background: rgba(5, 10, 15, 0.97);
+    backdrop-filter: blur(20px);
+    border-bottom: 1px solid var(--border);
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.35s ease;
+  }
+
+  .nav-links.open {
+    max-height: 400px;
+  }
+
+  .nav-links li {
+    width: 100%;
+  }
+
+  .nav-links a {
+    display: block;
+    padding: 1rem 2rem;
+    border-radius: 0;
+    border: none;
+    border-bottom: 1px solid var(--border);
+    font-size: 0.8rem;
+  }
+
+  .nav-links a:hover,
+  .nav-links a.active {
+    background: rgba(0, 212, 255, 0.05);
+    border-color: var(--border);
+  }
 }
