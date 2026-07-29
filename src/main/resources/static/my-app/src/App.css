@@ -140,8 +140,7 @@ body {
 
 /* SECTIONS */
 section {
-  min-height: 100vh;
-  padding: 6rem 2rem 4rem;
+  padding: 4rem 2rem 2.5rem;
   max-width: 1200px;
   margin: 0 auto;
 }
@@ -168,14 +167,14 @@ section {
 .divider {
   width: 60px; height: 3px;
   background: linear-gradient(90deg, var(--accent), transparent);
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
 }
 
 /* HERO */
 .hero {
-  min-height: 100vh;
+  min-height: 70vh;
   display: flex; align-items: center;
-  padding: 0 2rem;
+  padding: 5rem 2rem 2rem;
   max-width: 1200px;
   margin: 0 auto;
   position: relative;
@@ -215,16 +214,16 @@ section {
   font-size: 0.85rem;
   letter-spacing: 0.3em;
   color: var(--accent);
-  margin-bottom: 1rem;
+  margin-bottom: 0.8rem;
   animation: fadeUp 0.8s ease forwards;
 }
 
 .hero-name {
   font-family: 'Syne', sans-serif;
-  font-size: clamp(3rem, 7vw, 6rem);
+  font-size: clamp(2.6rem, 6vw, 5rem);
   font-weight: 800;
   line-height: 1;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.4rem;
   animation: fadeUp 0.8s 0.2s ease both;
 }
 
@@ -233,38 +232,38 @@ section {
 
 .hero-role {
   font-family: 'Syne', sans-serif;
-  font-size: clamp(1.2rem, 3vw, 1.8rem);
+  font-size: clamp(1.1rem, 2.6vw, 1.6rem);
   font-weight: 600;
   color: var(--text-muted);
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.1rem;
   animation: fadeUp 0.8s 0.4s ease both;
 }
 
 .hero-role span { color: var(--accent2); }
 
 .hero-desc {
-  font-size: 1.05rem;
-  line-height: 1.8;
+  font-size: 0.95rem;
+  line-height: 1.7;
   color: var(--text-muted);
   max-width: 550px;
-  margin-bottom: 2.5rem;
+  margin-bottom: 1.8rem;
   animation: fadeUp 0.8s 0.6s ease both;
 }
 
 .hero-btns {
-  display: flex; gap: 1rem; flex-wrap: wrap;
+  display: flex; gap: 0.8rem; flex-wrap: wrap;
   animation: fadeUp 0.8s 0.8s ease both;
 }
 
 .btn-primary {
-  padding: 0.9rem 2rem;
+  padding: 0.6rem 1.4rem;
   background: var(--accent);
   color: var(--bg);
-  border: none; border-radius: 6px;
+  border: none; border-radius: 5px;
   font-family: 'Space Mono', monospace;
-  font-size: 0.8rem;
+  font-size: 0.7rem;
   font-weight: 700;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.08em;
   cursor: pointer;
   text-decoration: none;
   transition: all 0.3s;
@@ -279,14 +278,14 @@ section {
 }
 
 .btn-secondary {
-  padding: 0.9rem 2rem;
+  padding: 0.6rem 1.4rem;
   background: transparent;
   color: var(--text);
   border: 1px solid var(--border);
-  border-radius: 6px;
+  border-radius: 5px;
   font-family: 'Space Mono', monospace;
-  font-size: 0.8rem;
-  letter-spacing: 0.1em;
+  font-size: 0.7rem;
+  letter-spacing: 0.08em;
   cursor: pointer;
   text-decoration: none;
   transition: all 0.3s;
@@ -298,19 +297,19 @@ section {
 }
 
 .hero-stats {
-  display: flex; gap: 3rem;
-  margin-top: 3rem;
+  display: flex; gap: 2.2rem;
+  margin-top: 2rem;
   animation: fadeUp 0.8s 1s ease both;
 }
 
 .stat-num {
   font-family: 'Syne', sans-serif;
-  font-size: 2rem; font-weight: 800;
+  font-size: 1.7rem; font-weight: 800;
   color: var(--accent);
 }
 
 .stat-label {
-  font-size: 0.75rem;
+  font-size: 0.72rem;
   color: var(--text-muted);
   letter-spacing: 0.1em;
 }
@@ -324,17 +323,17 @@ section {
 .about-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 4rem;
+  gap: 3rem;
   align-items: center;
 }
 
 .about-avatar {
-  width: 280px; height: 280px;
+  width: 220px; height: 220px;
   border-radius: 20px;
   background: linear-gradient(135deg, var(--bg3), var(--bg2));
   border: 1px solid var(--border);
   display: flex; align-items: center; justify-content: center;
-  font-size: 8rem;
+  font-size: 6rem;
   position: relative;
   overflow: hidden;
   box-shadow: var(--glow);
@@ -351,16 +350,16 @@ section {
 
 .about-text p {
   color: var(--text-muted);
-  line-height: 1.9;
-  margin-bottom: 1.2rem;
-  font-size: 1rem;
+  line-height: 1.8;
+  margin-bottom: 1rem;
+  font-size: 0.95rem;
 }
 
 .about-text p strong { color: var(--accent); }
 
 .about-tags {
   display: flex; flex-wrap: wrap; gap: 0.5rem;
-  margin-top: 1.5rem;
+  margin-top: 1.2rem;
 }
 
 .tag {
@@ -377,15 +376,15 @@ section {
 /* SKILLS */
 .skills-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.2rem;
 }
 
 .skill-card {
   background: var(--card-bg);
   border: 1px solid var(--border);
   border-radius: 12px;
-  padding: 1.5rem;
+  padding: 1.2rem;
   transition: all 0.3s;
   position: relative;
   overflow: hidden;
@@ -406,13 +405,13 @@ section {
 }
 
 .skill-icon {
-  font-size: 2rem; margin-bottom: 0.8rem;
+  font-size: 1.7rem; margin-bottom: 0.6rem;
 }
 
 .skill-name {
   font-family: 'Syne', sans-serif;
-  font-size: 1rem; font-weight: 700;
-  margin-bottom: 0.5rem;
+  font-size: 0.95rem; font-weight: 700;
+  margin-bottom: 0.4rem;
 }
 
 .skill-bar-wrap {
@@ -420,7 +419,7 @@ section {
   background: var(--bg3);
   border-radius: 2px;
   overflow: hidden;
-  margin-top: 0.8rem;
+  margin-top: 0.7rem;
 }
 
 .skill-bar-fill {
@@ -437,17 +436,17 @@ section {
 
 .skill-level {
   font-family: 'Space Mono', monospace;
-  font-size: 0.7rem;
+  font-size: 0.68rem;
   color: var(--accent);
   text-align: right;
-  margin-top: 0.3rem;
+  margin-top: 0.25rem;
 }
 
 /* PROJECTS */
 .projects-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
-  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.6rem;
 }
 
 .project-card {
@@ -466,12 +465,12 @@ section {
 }
 
 .project-header {
-  padding: 2rem;
+  padding: 1.6rem;
   background: linear-gradient(135deg, var(--bg3), var(--bg2));
   display: flex; align-items: center; justify-content: space-between;
 }
 
-.project-icon { font-size: 3rem; }
+.project-icon { font-size: 2.4rem; }
 
 .project-badge {
   font-family: 'Space Mono', monospace;
@@ -484,25 +483,25 @@ section {
   color: var(--accent);
 }
 
-.project-body { padding: 1.5rem; }
+.project-body { padding: 1.2rem; }
 
 .project-title {
   font-family: 'Syne', sans-serif;
-  font-size: 1.3rem; font-weight: 700;
-  margin-bottom: 0.8rem;
+  font-size: 1.15rem; font-weight: 700;
+  margin-bottom: 0.6rem;
   color: var(--text);
 }
 
 .project-desc {
   color: var(--text-muted);
-  font-size: 0.9rem;
-  line-height: 1.7;
-  margin-bottom: 1.2rem;
+  font-size: 0.88rem;
+  line-height: 1.6;
+  margin-bottom: 1rem;
 }
 
 .project-tech {
   display: flex; flex-wrap: wrap; gap: 0.4rem;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.2rem;
 }
 
 .tech-tag {
@@ -517,11 +516,11 @@ section {
 
 .project-features {
   list-style: none;
-  display: flex; flex-direction: column; gap: 0.5rem;
+  display: flex; flex-direction: column; gap: 0.4rem;
 }
 
 .project-features li {
-  font-size: 0.85rem;
+  font-size: 0.83rem;
   color: var(--text-muted);
   padding-left: 1.2rem;
   position: relative;
@@ -548,8 +547,8 @@ section {
 
 .edu-item {
   position: relative;
-  margin-bottom: 3rem;
-  padding: 1.5rem;
+  margin-bottom: 2.2rem;
+  padding: 1.2rem;
   background: var(--card-bg);
   border: 1px solid var(--border);
   border-radius: 12px;
@@ -581,18 +580,18 @@ section {
 
 .edu-degree {
   font-family: 'Syne', sans-serif;
-  font-size: 1.2rem; font-weight: 700;
+  font-size: 1.1rem; font-weight: 700;
   margin-bottom: 0.3rem;
 }
 
 .edu-school {
   color: var(--text-muted);
-  font-size: 0.9rem;
+  font-size: 0.88rem;
   margin-bottom: 0.5rem;
 }
 
 .edu-detail {
-  font-size: 0.85rem;
+  font-size: 0.83rem;
   color: var(--accent2);
   font-family: 'Space Mono', monospace;
 }
@@ -601,16 +600,18 @@ section {
 .contact-wrapper {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 4rem;
+  gap: 3rem;
 }
 
 .contact-info {
-  display: flex; flex-direction: column; gap: 1.5rem;
+  display: flex; flex-direction: column; gap: 1.2rem;
 }
 
 .contact-item {
   display: flex; align-items: flex-start; gap: 1rem;
-  padding: 1.2rem;
+  text-decoration: none;
+  color: inherit;
+  padding: 1rem;
   background: var(--card-bg);
   border: 1px solid var(--border);
   border-radius: 12px;
@@ -620,15 +621,16 @@ section {
 .contact-item:hover {
   border-color: rgba(0,212,255,0.4);
   transform: translateX(5px);
+  text-decoration: none;
 }
 
 .contact-icon {
-  width: 40px; height: 40px;
+  width: 38px; height: 38px;
   background: rgba(0,212,255,0.1);
   border: 1px solid var(--border);
   border-radius: 8px;
   display: flex; align-items: center; justify-content: center;
-  font-size: 1.2rem; flex-shrink: 0;
+  font-size: 1.1rem; flex-shrink: 0;
 }
 
 .contact-label {
@@ -640,13 +642,13 @@ section {
 }
 
 .contact-value {
-  font-size: 0.95rem;
+  font-size: 0.92rem;
   color: var(--text);
 }
 
 /* CONTACT FORM */
 .contact-form {
-  display: flex; flex-direction: column; gap: 1rem;
+  display: flex; flex-direction: column; gap: 0.9rem;
 }
 
 .form-group {
@@ -665,10 +667,10 @@ section {
   background: var(--bg3);
   border: 1px solid var(--border);
   border-radius: 8px;
-  padding: 0.8rem 1rem;
+  padding: 0.7rem 0.9rem;
   color: var(--text);
   font-family: 'DM Sans', sans-serif;
-  font-size: 0.95rem;
+  font-size: 0.92rem;
   transition: all 0.3s;
   resize: vertical;
 }
@@ -702,7 +704,7 @@ section {
 /* FOOTER */
 .footer {
   border-top: 1px solid var(--border);
-  padding: 2rem;
+  padding: 1.6rem;
   text-align: center;
   color: var(--text-muted);
   font-family: 'Space Mono', monospace;
@@ -710,28 +712,6 @@ section {
   letter-spacing: 0.1em;
 }
 
-.contact-item{
-  display:flex;
-  align-items:flex-start;
-  gap:1rem;
-  text-decoration:none;
-  color:inherit;
-  padding:1.2rem;
-  background:var(--card-bg);
-  border:1px solid var(--border);
-  border-radius:12px;
-  transition:all .3s;
-}
-
-.contact-item:hover{
-  border-color:rgba(0,212,255,.4);
-  transform:translateX(5px);
-  text-decoration:none;
-}
-
-.contact-value{
-  color:var(--text);
-}
 /* ============================
    RESPONSIVE — TABLET (≤768px)
    ============================ */
@@ -750,7 +730,7 @@ section {
 
   .nav-links {
     position: fixed;
-    top: 58px; /* matches the shorter mobile navbar padding above */
+    top: 58px;
     left: 0;
     right: 0;
     flex-direction: column;
@@ -782,35 +762,35 @@ section {
   }
 
   /* Sections */
-  section { padding: 5rem 1.25rem 3rem; }
-  .section-title { margin-bottom: 0.75rem; }
-  .divider { margin-bottom: 2rem; }
+  section { padding: 3.5rem 1.25rem 2rem; }
+  .section-title { margin-bottom: 0.6rem; }
+  .divider { margin-bottom: 1.5rem; }
 
   /* Hero */
-  .hero { padding: 0 1.25rem; min-height: auto; padding-top: 6rem; padding-bottom: 3rem; }
-  .hero-desc { font-size: 0.95rem; }
-  .hero-btns { gap: 0.75rem; }
-  .btn-primary, .btn-secondary { padding: 0.8rem 1.5rem; font-size: 0.75rem; flex: 1 1 auto; text-align: center; }
-  .hero-stats { gap: 1.75rem; margin-top: 2rem; flex-wrap: wrap; }
-  .stat-num { font-size: 1.6rem; }
+  .hero { padding: 4.5rem 1.25rem 2rem; min-height: auto; }
+  .hero-desc { font-size: 0.9rem; }
+  .hero-btns { gap: 0.6rem; }
+  .btn-primary, .btn-secondary { padding: 0.55rem 1.1rem; font-size: 0.68rem; flex: 1 1 auto; text-align: center; }
+  .hero-stats { gap: 1.4rem; margin-top: 1.5rem; flex-wrap: wrap; }
+  .stat-num { font-size: 1.4rem; }
 
   /* About */
-  .about-grid, .contact-wrapper { grid-template-columns: 1fr; gap: 2.5rem; }
-  .about-avatar { width: 200px; height: 200px; font-size: 5rem; margin: 0 auto; }
+  .about-grid, .contact-wrapper { grid-template-columns: 1fr; gap: 2rem; }
+  .about-avatar { width: 170px; height: 170px; font-size: 4.2rem; margin: 0 auto; }
   .about-text { text-align: left; }
 
   /* Skills / Projects grids collapse naturally via auto-fit, just tighten gaps */
-  .skills-grid { gap: 1.1rem; }
-  .projects-grid { gap: 1.5rem; }
+  .skills-grid { gap: 1rem; }
+  .projects-grid { gap: 1.2rem; }
 
   /* Education timeline */
   .edu-timeline { padding-left: 1.5rem; }
   .edu-item::before { left: -2rem; width: 12px; height: 12px; }
-  .edu-item { padding: 1.2rem; margin-bottom: 2.2rem; }
+  .edu-item { padding: 1rem; margin-bottom: 1.8rem; }
 
   /* Contact */
-  .contact-item { padding: 1rem; }
-  .footer { padding: 1.5rem 1rem; font-size: 0.7rem; }
+  .contact-item { padding: 0.9rem; }
+  .footer { padding: 1.2rem 1rem; font-size: 0.7rem; }
 }
 
 /* ============================
@@ -820,42 +800,42 @@ section {
 
   .nav-logo { font-size: 1.1rem; }
 
-  section { padding: 4.5rem 1rem 2.5rem; }
+  section { padding: 3.5rem 1rem 2rem; }
 
-  .hero { padding: 5.5rem 1rem 2.5rem; }
-  .hero-greeting { font-size: 0.7rem; letter-spacing: 0.2em; }
-  .hero-name { font-size: clamp(2.2rem, 12vw, 3rem); }
-  .hero-role { font-size: 1.1rem; }
-  .hero-desc { font-size: 0.9rem; line-height: 1.7; }
-  .hero-btns { flex-direction: column; }
-  .btn-primary, .btn-secondary { width: 100%; }
-  .hero-stats { gap: 1.25rem; }
-  .stat-num { font-size: 1.4rem; }
-  .stat-label { font-size: 0.68rem; }
+  .hero { padding: 4.5rem 1rem 2rem; }
+  .hero-greeting { font-size: 0.68rem; letter-spacing: 0.18em; }
+  .hero-name { font-size: clamp(2rem, 11vw, 2.6rem); }
+  .hero-role { font-size: 1.02rem; }
+  .hero-desc { font-size: 0.86rem; line-height: 1.6; }
+  .hero-btns { flex-direction: row; flex-wrap: wrap; gap: 0.6rem; }
+  .btn-primary, .btn-secondary { width: auto; flex: 0 0 auto; padding: 0.5rem 1rem; font-size: 0.65rem; }
+  .hero-stats { gap: 1rem; }
+  .stat-num { font-size: 1.25rem; }
+  .stat-label { font-size: 0.65rem; }
 
-  .section-title { font-size: clamp(1.8rem, 9vw, 2.4rem); }
-  .section-label { font-size: 0.65rem; }
+  .section-title { font-size: clamp(1.6rem, 8vw, 2.1rem); }
+  .section-label { font-size: 0.62rem; }
 
-  .about-avatar { width: 160px; height: 160px; font-size: 4rem; border-radius: 16px; }
-  .about-text p { font-size: 0.9rem; line-height: 1.75; }
-  .tag { font-size: 0.68rem; padding: 0.25rem 0.65rem; }
+  .about-avatar { width: 140px; height: 140px; font-size: 3.4rem; border-radius: 16px; }
+  .about-text p { font-size: 0.86rem; line-height: 1.65; }
+  .tag { font-size: 0.66rem; padding: 0.22rem 0.6rem; }
 
-  .skill-card { padding: 1.2rem; }
-  .skill-name { font-size: 0.9rem; }
+  .skill-card { padding: 1rem; }
+  .skill-name { font-size: 0.86rem; }
 
-  .project-header { padding: 1.5rem; }
-  .project-icon { font-size: 2.2rem; }
-  .project-body { padding: 1.2rem; }
-  .project-title { font-size: 1.1rem; }
-  .project-desc { font-size: 0.85rem; }
+  .project-header { padding: 1.2rem; }
+  .project-icon { font-size: 2rem; }
+  .project-body { padding: 1rem; }
+  .project-title { font-size: 1.02rem; }
+  .project-desc { font-size: 0.82rem; }
 
-  .edu-degree { font-size: 1.05rem; }
-  .edu-school, .edu-detail { font-size: 0.8rem; }
+  .edu-degree { font-size: 0.98rem; }
+  .edu-school, .edu-detail { font-size: 0.78rem; }
 
-  .contact-icon { width: 34px; height: 34px; font-size: 1rem; }
-  .contact-value { font-size: 0.85rem; }
-  .form-group input, .form-group textarea { padding: 0.7rem 0.85rem; font-size: 0.9rem; }
+  .contact-icon { width: 32px; height: 32px; font-size: 0.95rem; }
+  .contact-value { font-size: 0.82rem; }
+  .form-group input, .form-group textarea { padding: 0.6rem 0.8rem; font-size: 0.86rem; }
 
   .nav-links { top: 54px; }
-  .nav-links a { padding: 0.9rem 1.25rem; font-size: 0.75rem; }
+  .nav-links a { padding: 0.85rem 1.1rem; font-size: 0.72rem; }
 }
