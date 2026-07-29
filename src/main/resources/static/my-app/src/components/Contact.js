@@ -1,12 +1,31 @@
 import { useState } from "react";
 
 const contactInfo = [
-  { icon: "📧", label: "EMAIL", value: "nagarajan4526@gmail.com" },
-  { icon: "📱", label: "PHONE", value: "+91 9345909141" },
-  { icon: "📍", label: "LOCATION", value: "Pudukottai, Tamil Nadu" },
-  { icon: "💼", label: "ROLE", value: "Java Full Stack Developer" },
+  {
+    icon: "📧",
+    label: "EMAIL",
+    value: "nagarajan4526@gmail.com",
+    link: "mailto:nagarajan4526@gmail.com",
+  },
+  {
+    icon: "📱",
+    label: "PHONE",
+    value: "+91 9345909141",
+    link: "tel:+919345909141",
+  },
+  {
+    icon: "📍",
+    label: "LOCATION",
+    value: "Pudukottai, Tamil Nadu",
+    link: "https://maps.google.com/?q=Pudukottai,Tamil Nadu",
+  },
+  {
+    icon: "💼",
+    label: "ROLE",
+    value: "Java Full Stack Developer",
+    link: "#",
+  },
 ];
-
 const Contact = () => {
   const [form, setForm] = useState({ name: "", email: "", subject: "", message: "" });
   const [status, setStatus] = useState(null);
@@ -50,16 +69,21 @@ const Contact = () => {
             I'm actively looking for Full Stack Developer opportunities. Whether you have a
             project, a job opportunity, or just want to connect — my inbox is always open!
           </p>
-          {contactInfo.map((c, i) => (
-            <div className="contact-item" key={i}>
-              <div className="contact-icon">{c.icon}</div>
-              <div>
-                <div className="contact-label">{c.label}</div>
-                <div className="contact-value">{c.value}</div>
-              </div>
-            </div>
-          ))}
-        </div>
+		  {contactInfo.map((c, i) => (
+		    <a
+		      key={i}
+		      href={c.link}
+		      className="contact-item"
+		      target={c.link.startsWith("http") ? "_blank" : "_self"}
+		      rel="noopener noreferrer"
+		    >
+		      <div className="contact-icon">{c.icon}</div>
+		      <div>
+		        <div className="contact-label">{c.label}</div>
+		        <div className="contact-value">{c.value}</div>
+		      </div>
+		    </a>
+		  ))}        </div>
 
         <div className="contact-form">
           <div className="form-group">
